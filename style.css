@@ -1,0 +1,236 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f0f0f0;
+    margin-bottom: 50px;
+}
+
+header {
+    height: 90px;
+    width: 100%;
+    font-family: 'Playfair Display', serif;
+
+}
+.headerContainer {
+    display: flex;
+    align-items: center;
+    height: 90px;
+    width: 100%;
+    padding-left: 30px;
+    border-bottom: 2px solid black;
+}
+
+.headerContainer h1 {
+    font-size: 40px;
+    color: #e7473c;
+    font-family: 'Sevillana', cursive;
+}
+.firstSoundBox {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.containerBox {
+    width: 200px;
+    height: 250px;
+    background-color: #e7473c;
+    display: flex;
+    justify-content: center; 
+    border-radius: 15px;
+    margin-top: 20px;
+    border: 1px solid inherit;
+
+}
+
+.box {
+    width: 180px;
+    height: 150px;
+    background-color: white;
+    margin-top: 10px;
+    border-radius: 20px;
+
+}
+
+.imgOne {
+    background-image: url(a960d3ce-07d6-4d15-af4c-3ed5b1c59e06.jfif);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.imgTwo {
+    background-image: url(3f326c27-f2e3-4b57-aad1-df9a4f4ff973.jfif);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.imgThree {
+    background-image: url(Premium\ Photo\ _\ Hand\ of\ crowd\ in\ disco.jfif);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.imgFour {
+    background-image: url(cc321394-6cb5-48b9-90dd-9030f5ebcfa8.jfif);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.imgFive {
+    background-image: url(fuck.jfif);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.imgSix {
+    background-image: url(Spongebob_\).jfif);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.imgSeven {
+    background-image: url(Broken\ heart\ 💔\ background.jfif);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.imgEight {
+    background-image: url(Pin\ by\ Katie\ Vells\ on\ Spotify\ Cover\ in\ 2022\ _\ Ghost\ pictures\,\ Face\ photography\,\ Ghost\ photos.jfif);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.title {
+    position: absolute;
+    top : 290px;
+    display: flex;
+}
+.titleOne {
+    margin-left: 110px;
+}
+.titleTwo {
+    margin-left: 210px;
+}
+.titleThree {
+    margin-left: 225px;
+}
+.titleFour {
+    margin-left: 195px;
+}
+
+.firstSoundBoxB {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.titleB {
+    display: flex;
+    position: absolute;
+    bottom: -100px;
+}
+
+.titleOneB {
+    margin-left: 110px;
+}
+
+.titleTwoB {
+    margin-left: 170px;
+}
+.titleThreeB {
+    margin-left: 160px;
+}
+.titleFourB {
+    margin-left: 190px;
+}
+
+.footerContainer {
+    display: none;
+}
+.playSongContainer {
+    height: 80px;
+    display: flex;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    justify-content: space-around;
+    align-items: center;
+    color: #e7473c;
+    background-color: black;
+    box-sizing: border-box;
+}
+#progressBar {
+    width: 500px;
+    height: 5px;
+    background-color: #e7473c;
+    border-radius: 20px;
+}
+
+#currentBar {
+    width: 0px;
+    height: 100%;
+    background-color: #f0f0f0;
+}
+
+.songTitle {
+    font-family: 'Playfair Display', serif;
+    font-size: 20px;
+    width: 40%;
+    padding: 50px;
+}
+
+.playerButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 150px;
+}
+
+.ButtonContainer {
+    width: 60%;
+}
+.playerButton i {
+    margin:10px 20px;
+}
+
+.playerTitle {
+    text-align: center;
+    margin-right: 150px;
+}
+
+.lisText {
+    margin-bottom: -20px;
+}
+
+@media screen and (max-width: 600px) {
+    .firstSoundBox {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+    }
+    .title {
+        display: none;
+    }
+    .firstSoundBoxB {
+        flex-wrap: wrap;
+    }
+    .titleB {
+        display: none;
+    }
+    .songTitle {
+        font-size: 19px;
+        padding: 30px;
+    }
+    .playerTitle {
+        margin-right: 10px;
+    }
+    #progressBar {
+        max-width: 300px;
+        max-height: 5px;
+    }
+    .playerButton {
+        margin-right: 10px;
+    }
+}
